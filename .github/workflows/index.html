@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;400;600;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+
+    <title>SVG</title>
+
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="row">
+
+            <svg>
+            
+              <g>
+                <polygon  points="500,0 150,280 750,500" ></polygon>
+                <polygon  points="250,-50 750,0 250,250" ></polygon> 
+                <polygon  points="250,550 250,260 650,500" ></polygon>
+                <polygon  points="250,250 -250,0 250,-50" ></polygon>
+                <polygon  points="-240,0 250,250 0,430" ></polygon>
+                <polygon  points="-150,500 250,550 250,250"  ></polygon>
+              </g>
+              <g>
+                <circle class="main-circle"  cx="250" cy="250" r="250"></circle>
+                <circle class="circle" cx="250" cy="250" r="25"></circle>
+              </g>
+            
+              <g>
+                <circle class="circle-content" cx="250" cy="250"></circle>
+              </g>
+              
+              <defs>
+                <linearGradient id="gradient" x1="100%" y1="100%" x2="100%" y2="20%">
+                  <stop offset="50%" style="stop-color:#9fcaf4;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#ddeaf8;stop-opacity:1" />
+                </linearGradient>
+              </defs>
+
+               <g class="title-sections" transform="translate(250, 250)">
+                  <text text-anchor="middle">
+                    <tspan x="-175" y="0">Localização de</tspan>
+                    <tspan x="-175" y="20">Conteúdo</tspan>
+                  </text>
+                  <text text-anchor="middle">
+                    <tspan x="-90" y="-160">Gestão e</tspan>
+                    <tspan x="-90" y="-140">Conformação dos</tspan>
+                    <tspan x="-90" y="-120">Metadados</tspan>
+                  </text>
+                  <text text-anchor="middle">
+                    <tspan x="90" y="-160">Controle de</tspan>
+                    <tspan x="90" y="-140">Qualidade</tspan>
+                  </text>
+                  <text text-anchor="middle">
+                    <tspan x="175" y="0">Criação de</tspan>
+                    <tspan x="175" y="20">Thumbnails</tspan>
+                    <tspan x="175" y="40">Responsivos</tspan>
+                  </text>
+                  <text text-anchor="middle">
+                    <tspan x="-90" y="135">Upload e Ingest de</tspan>
+                    <tspan x="-90" y="155">Conteúdos e</tspan>
+                    <tspan x="-90" y="175">Metadados</tspan>
+                  </text>
+                  <text text-anchor="middle">
+                    <tspan x="90" y="135">Relatórios de</tspan>
+                    <tspan x="90" y="155">Consumo</tspan>
+                    <tspan x="90" y="175">Conteúdos e</tspan>
+                    <tspan x="90" y="195">Receita</tspan>
+                  </text>
+                  <text text-anchor="middle">
+                    <tspan x="0" y="-50" class="title-center">Nossos</tspan>
+                    <tspan x="0" y="-25" class="title-center-next">Serviços</tspan>
+                    <tspan x="0" y="0" class="center-section">Lorem ipsum dolor sit</tspan>
+                    <tspan x="0" y="15" class="center-section">amet,. Sed malesuada</tspan>
+                    <tspan x="0" y="30" class="center-section">lobortis lacus eu lobortis.</tspan>
+                    <tspan x="0" y="45" class="center-section">Duis venenatis non nibh sit</tspan>
+                    <tspan x="0" y="60" class="center-section">amet tempor.</tspan>
+                  </text>
+                  
+                </g>
+
+                <g class="content" transform="translate(250, 250)">
+                  <text text-anchor="middle">
+                    <tspan x="0" y="-10" class="title-content">Título</tspan>
+                    <tspan x="0" y="30" class="text-content">Conteúdo</tspan>
+                  </text>
+                </g>
+                
+            </svg>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
